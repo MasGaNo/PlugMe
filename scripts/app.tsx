@@ -3,7 +3,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Layout} from './views/layout';
-import {Flyout} from './views/components/flyout';
 import {Grid} from './views/grid';
 
 import {AppButton} from './views/apps/app/button';
@@ -16,7 +15,6 @@ module App {
     export function start() {
         ReactDOM.render(
             <Layout>
-                <Flyout />
                 <Grid />
                 <AppButton />
                 <ApplicationView.Application />

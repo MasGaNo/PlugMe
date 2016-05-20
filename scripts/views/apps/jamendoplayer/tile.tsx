@@ -19,7 +19,7 @@ export class JamendoPlayerTile extends Tile.Tile {
     }
     renderContent() {
         return (
-            <iframe src={(this.props as IJamendoPlayerTileProps).url} />
+            <iframe src={(this.props as IJamendoPlayerTileProps).url} width={400} height={549} style={{transform:"scaleX(0.78) scaleY(0.57)", transformOrigin:"left top"}} />
         );
     }
 }
