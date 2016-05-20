@@ -46,7 +46,7 @@ export class Tile extends React.Component<ITileProps, ITileState> {
         return (
             <div className={`tile-${this.state.size} fg-white`}>
                 <div className="tile-content">
-                    {this.props.children}
+                    {this.renderContent()}
                 </div>
                 <div className="action-bar">
                     {settingsDom}
@@ -54,5 +54,9 @@ export class Tile extends React.Component<ITileProps, ITileState> {
                 </div>
             </div>
         );
+    }
+    
+    protected renderContent() {
+        return this.props.children;
     }
 }

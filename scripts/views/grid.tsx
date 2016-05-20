@@ -33,7 +33,7 @@ export class Grid extends React.Component<IGridProps, IGridState> {
         };
     }
     
-    public add(bloc: typeof Tile, props: ITileProps, children: any) {
+    public add(bloc: typeof Tile, props: ITileProps, children?: any) {
         this.state.blocList.push({
             class: bloc,
             props: props,
@@ -53,7 +53,7 @@ export class Grid extends React.Component<IGridProps, IGridState> {
     
     public render() {
         return (
-            <div className="tile-container bg-darkCobalt">
+            <div className="tile-container bg-darkCobalt" style={{minHeight: '100%'}}>
                 {this.state.blocList.map((bloc:IBlocInstance, index) => {
                     let props = bloc.props;
                     props.onClose = this.onCloseBloc.bind(this, index);

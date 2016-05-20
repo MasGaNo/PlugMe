@@ -17,7 +17,7 @@ export class Layout extends React.Component<ILayoutProps, ILayoutState> {
     
     render() {
         return (
-            <div className="container layout" style={{width: '100%', padding: '0'}}>
+            <div className="container layout" style={{width: '100%', height: '100%', padding: '0'}}>
                 {this.props.children}
             </div>
         );
