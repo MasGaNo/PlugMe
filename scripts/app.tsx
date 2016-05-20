@@ -10,7 +10,6 @@ module App {
     export function start() {
         ReactDOM.render(
             <Layout>
-                <Flyout />
             </Layout>
             , document.querySelector('#container'));
     }
