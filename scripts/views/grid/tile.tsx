@@ -19,6 +19,7 @@ export interface ITileProps {
 
 export interface ITileState {
     size: ITileSize;
+    [key:string]: any;
 }
 
 export class Tile extends React.Component<ITileProps, ITileState> {
