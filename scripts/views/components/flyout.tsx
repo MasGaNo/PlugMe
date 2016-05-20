@@ -2,11 +2,11 @@
  
 import * as React from 'react';
 
-interface IFlyoutProps {
+export interface IFlyoutProps {
     
 }
 
-interface IFlyoutState {
+export interface IFlyoutState {
     
 }
 
@@ -15,7 +15,7 @@ export class  Flyout extends React.Component<IFlyoutProps, IFlyoutState> {
     super(props);
   }
   render() {
-    return (<div class="col-md-12"></div>);
+    return (<div className="col-md-12"></div>);
   }
 }
 
