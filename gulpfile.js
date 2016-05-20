@@ -21,7 +21,7 @@ gulp.task('build', function () {
             .pipe(uglify());
     }
     return gulpTask
-        .pipe(gulp.dest('./www/'));
+        .pipe(gulp.dest('./www/js/'));
 });
 
 gulp.task('set-prod-environment', function() {
