@@ -3,15 +3,10 @@ var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var cssimport = require("gulp-cssimport");
 var args = require("yargs").argv;
 var uglify = require("gulp-uglify");
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
-
-var options = {
-    matchPattern: "*.css" // process only css
-};
 
 var isProd = args.env === 'production';
 
@@ -48,12 +43,6 @@ gulp.task('styles', function() {
         gulpTask = gulpTask.pipe(sourcemaps.write());
     }
     gulpTask.pipe(gulp.dest('./www/css/'));
-});
-
-gulp.task("import", function() {
-    gulp.src("assets/css/styles.css")
-        .pipe(cssimport(options))
-        .pipe(gulp.dest("dist"));
 });
 
 gulp.task('watch', ['set-prod-environment', 'build', 'styles'], function () {
