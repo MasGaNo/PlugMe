@@ -3,3 +3,10 @@
 *.js.map
 wwww
 node_modules
+.idea/.name
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/PlugMe.iml
+.idea/watcherTasks.xml
+.idea/copyright/profiles_settings.xml
