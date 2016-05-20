@@ -46,7 +46,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', ['set-prod-environment', 'build', 'styles'], function () {
-    gulp.watch('scripts/*.js', ['set-prod-environment', 'build']);
+    gulp.watch('scripts/**/*.js', ['set-prod-environment', 'build']);
     gulp.watch('./src/styles/**/*.scss', ['set-prod-environment', 'styles']);
 });
 

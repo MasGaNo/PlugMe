@@ -1,4 +1,9 @@
 @import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap";
 
+@import "plugme/button";
+
 @import "plugme/layout";
-@import "plugme/flyout";
+@import "plugme/tile";
+
+@import "plugme/apps/app";
+
