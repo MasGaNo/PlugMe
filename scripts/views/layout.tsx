@@ -19,7 +19,7 @@ export class Layout extends React.Component<ILayoutProps, ILayoutState> {
         return (
             <div className="container layout">
                 {this.props.children}
-            </div>  
+            </div>
         );
     }
 }
