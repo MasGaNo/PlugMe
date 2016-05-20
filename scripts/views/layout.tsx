@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 
-
 export interface ILayoutProps {
     
 }
@@ -18,7 +17,7 @@ export class Layout extends React.Component<ILayoutProps, ILayoutState> {
     
     render() {
         return (
-            <div className="container layout">
+            <div className="container layout" style={{width: '100%', padding: '0'}}>
                 {this.props.children}
             </div>
         );

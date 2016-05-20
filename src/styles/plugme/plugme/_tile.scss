@@ -1,0 +1,26 @@
+.tile-large,
+.tile-square,
+.tile-wide, 
+.tile-small {
+    
+    .action-bar {
+        
+        position:absolute;
+        top: 0;
+        right: 0;
+    
+        button {
+            
+            border: 0;
+            outline: 0;
+            
+            &:focus, &:active,&:hover {
+                outline: 0;
+            }
+            
+        }
+        
+            
+    }
+    
+}
